@@ -1,26 +1,33 @@
 $url = "https://api.github.com/users/janikvonrotz/gists?page="
-$root = "./"
+$root = "/Users/janikvonrotz/LocalDrive/GistBox"
 
-(1..10) | %{
-   $gistPageUrl = $url + $_
-   $gists = Invoke-Restmethod -Uri $gistPageUrl
-   $gists | %{
-       $pullUrl = $_.git_pull_url
-       $name = ($_.description).split("#")[0] -replace "`n","" -replace "`r","" -replace "`r`n",""
+(1..11) | %{
 
-       $localPath = (Join-Path $root $name) -replace ":",""
+  $gistUrl = ($url + $_)
+  #Write-Host "Fetch gists from: $gistUrl"
 
-       if(Test-Path $localPath){
+  $gists = Invoke-Restmethod -Uri $gistUrl
+  $gists | %{
 
-           cd ($localPath)
-           Write-Host "Update GitHubGist $($name)"
-           # git pull
-           cd ..
+    #$_.git_pull_url
+    #($_.description).split("#")[0] -replace "`n","" -replace "`r","" -replace "`r`n","" -replace ":",""
 
-       }else{
+    $pullUrl = $_.git_pull_url
+    $name = ($_.description).split("#")[0] -replace "`n","" -replace "`r","" -replace "`r`n","" -replace ":",""
+    $localPath = Join-Path $root $name
 
-           Write-Host "Cloning GitHubGist $($name)"
-           #git clone ($pullUrl) $localPath
-       }
-   }
+    if(Test-Path $localPath){
+
+     cd ($localPath)
+     Write-Host "Update gist: $($name)"
+     git pull
+
+    }else{
+
+     cd $root
+     Write-Host "Cloning gist: $($name)"
+     git clone $pullUrl "$localPath" --quiet
+
+    }
+  }
 }
