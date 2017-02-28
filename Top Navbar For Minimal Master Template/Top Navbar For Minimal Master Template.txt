@@ -1,0 +1,33 @@
+<div id="s4-topheader2" class="s4-pr s4-notdlg">
+  <a name="startNavigation"></a>
+	<div class="s4-rp s4-app"></div>
+	<div class="s4-lp s4-toplinks">
+		<asp:ContentPlaceHolder id="PlaceHolderTopNavBar" runat="server">
+			<asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" runat="server">
+				<SharePoint:AspMenu
+					ID="TopNavigationMenuV4"
+					Runat="server"
+					EnableViewState="false"
+					DataSourceID="topSiteMap"
+					AccessKey="<%$Resources:wss,navigation_accesskey%>"
+					UseSimpleRendering="true"
+					UseSeparateCss="false"
+					Orientation="Horizontal"
+					StaticDisplayLevels="2"
+					MaximumDynamicDisplayLevels="1"
+					SkipLinkText=""
+					CssClass="s4-tn"/>
+					<SharePoint:DelegateControl runat="server" ControlId="TopNavigationDataSource" Id="topNavigationDelegate">
+						<Template_Controls>
+							<asp:SiteMapDataSource
+								ShowStartingNode="False"
+								SiteMapProvider="SPNavigationProvider"
+								id="topSiteMap"
+								runat="server"
+								StartingNodeUrl="sid:1002"/>
+						</Template_Controls>
+					</SharePoint:DelegateControl>	
+			</asp:ContentPlaceHolder>
+		</asp:ContentPlaceHolder>
+	</div>
+</div>

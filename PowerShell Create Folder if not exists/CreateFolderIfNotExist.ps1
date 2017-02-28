@@ -1,0 +1,1 @@
+if(!(Test-Path -path $LogPath)){New-Item $LogPath -Type Directory}

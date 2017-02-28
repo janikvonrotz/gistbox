@@ -1,0 +1,29 @@
+Default / TYPO3 / Linux Config / Powershell / 
+
+# comment
+
+PHP
+
+// comment
+
+CSS / JavaScript
+
+/* comment */
+
+HTML / XML
+
+<!-- 
+comment 
+-->
+
+INI
+
+;# comment
+
+VBA
+
+'# comment
+
+Batch
+
+rem # comment 

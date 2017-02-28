@@ -1,0 +1,1 @@
+get-spfarm | select BuildVersion

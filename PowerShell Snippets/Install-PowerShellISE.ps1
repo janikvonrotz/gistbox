@@ -1,0 +1,2 @@
+Import-Module ServerManager
+Add-Windowsfeature PowerShell-ISE

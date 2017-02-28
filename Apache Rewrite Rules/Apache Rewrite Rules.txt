@@ -1,0 +1,197 @@
+#Rewerite canonical URL
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^snippetdb.com$
+RewriteRule (.*) http://www.snippetdb.com$1 [R=301]
+
+#.htaccess rewrite examples should begin with: ^
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+#Require the www ^
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www\.askapache\.com$ [NC]
+RewriteRule ^(.*)$ http://www.askapache.com/$1 [R=301,L]
+
+#Loop Stopping Code ^
+#Sometimes your rewrites cause infinite loops, stop it with one of these rewrite code snippets.
+
+RewriteCond %{REQUEST_URI} ^/(stats/|missing\.html|failed_auth\.html|error/).* [NC]
+RewriteRule .* - [L]
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule .* - [L]
+
+#Cache-Friendly File Names ^
+#This is probably my favorite, and I use it on every site I work on. It allows me to update my javascript and css files in my visitors cache's simply by naming them differently in the html, on the server they stay the same name. This rewrites all files for /zap/j/anything-anynumber.js to /zap/j/anything.js #and /zap/c/anything-anynumber.css to /zap/c/anything.css
+
+RewriteRule ^zap/(j|c)/([a-z]+)-([0-9]+)\.(js|css)$ /zap/$1/$2.$4 [L]
+
+#SEO friendly link for non-flash browsers ^
+#When you use flash on your site and you properly supply a link to download flash that shows up for non-flash aware browsers, it is nice to use a shortcut to keep your code clean and your external links to a minimum. This code allows me to link to site.com/getflash/ for non-flash aware browsers.
+
+RewriteRule ^getflash/?$ http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash [NC,L,R=307]
+
+#Removing the Query_String ^
+#On many sites, the page will be displayed for both page.html and #page.html?anything=anything, which hurts your SEO with duplicate content. An easy way to fix this issue is to redirect external requests containing a query string to the same uri without the query_string.
+
+RewriteCond %{THE_REQUEST} ^GET\ /.*\;.*\ HTTP/
+RewriteCond %{QUERY_STRING} !^$
+RewriteRule .* http://www.askapache.com%{REQUEST_URI}? [R=301,L]
+
+#Sending requests to a php script ^
+#This .htaccess rewrite example invisibly rewrites requests for all Adobe pdf files to be handled by /cgi-bin/pdf-script.php
+
+RewriteRule ^(.+)\.pdf$  /cgi-bin/pdf-script.php?file=$1.pdf [L,NC,QSA]
+
+#Setting the language variable based on Client ^
+#For sites using multiviews or with multiple language capabilities, it is nice to be able to send the correct language automatically based on the clients preferred language.
+
+RewriteCond %{HTTP:Accept-Language} ^.*(de|es|fr|it|ja|ru|en).*$ [NC]
+RewriteRule ^(.*)$ - [env=prefer-language:%1]
+
+#Deny Access To Everyone Except PHP fopen ^
+#This allows access to all files by php fopen, but denies anyone else.
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^.+$ [NC]
+RewriteRule .* - [F,L]
+
+#If you are looking for ways to block or deny specific requests/visitors, then you should definately read Blacklist with mod_rewrite. I give it a 10/10.
+#Deny access to anything in a subfolder except php fopen ^
+#This can be very handy if you want to serve media files or special downloads but only through a php proxy script.
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+)/.*\ HTTP [NC]
+RewriteRule .* - [F,L]
+
+#Require no www ^
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^askapache\.com$ [NC]
+RewriteRule ^(.*)$ http://askapache.com/$1 [R=301,L]
+
+#Check for a key in QUERY_STRING ^
+#Uses a RewriteCond Directive to check QUERY_STRING for passkey, if it doesn't find it it redirects all requests for anything in the /logged-in/ directory to the /login.php script.
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{QUERY_STRING} !passkey
+RewriteRule ^/logged-in/(.*)$ /login.php [L]
+
+#Removes the QUERY_STRING from the URL ^
+#If the QUERY_STRING has any value at all besides blank than the?at the end of /login.php? tells mod_rewrite to remove the QUERY_STRING from login.php and #redirect.
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{QUERY_STRING} .
+RewriteRule ^login.php /login.php? [L]
+
+#Fix for infinite loops ^
+#An error message related to this isRequest exceeded the limit of 10 internal #redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.or you may seeRequest exceeded the limit,probable configuration error,Use 'LogLevel debug' to get a backtrace, orUse 'LimitInternalRecursion' to increase the limit if necessary
+
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule .* - [L]
+
+#External Redirect .php files to .html files (SEO friendly) ^
+
+RewriteRule ^(.*)\.php$ /$1.html [R=301,L]
+
+#Internal Redirect .php files to .html files (SEO friendly) ^
+#Redirects all files that end in .html to be served from filename.php so it looks like all your pages are .html but really they are .php
+
+RewriteRule ^(.*)\.html$ $1.php [R=301,L]
+
+#block access to files during certain hours of the day ^
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+# If the hour is 16 (4 PM) Then deny all access
+RewriteCond %{TIME_HOUR} ^16$
+RewriteRule ^.*$ - [F,L]
+
+#Rewrite underscores to hyphens for SEO URL ^
+#Converts all underscores "_" in urls to hyphens "-" for SEO benefits... See the full article for more info.
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteRule !\.(html|php)$ - [S=4]
+RewriteRule ^([^_]*)_([^_]*)_([^_]*)_([^_]*)_(.*)$ $1-$2-$3-$4-$5 [E=uscor:Yes]
+RewriteRule ^([^_]*)_([^_]*)_([^_]*)_(.*)$ $1-$2-$3-$4 [E=uscor:Yes]
+RewriteRule ^([^_]*)_([^_]*)_(.*)$ $1-$2-$3 [E=uscor:Yes]
+RewriteRule ^([^_]*)_(.*)$ $1-$2 [E=uscor:Yes]
+RewriteCond %{ENV:uscor} ^Yes$
+RewriteRule (.*) http://d.com/$1 [R=301,L]
+
+#Require the www without hardcoding ^
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www\.[a-z-]+\.[a-z]{2,6} [NC]
+RewriteCond %{HTTP_HOST} ([a-z-]+\.[a-z]{2,6})$     [NC]
+RewriteRule ^/(.*)$ http://%1/$1 [R=301,L]
+
+#Require no subdomain ^
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} \.([a-z-]+\.[a-z]{2,6})$ [NC]
+RewriteRule ^/(.*)$ http://%1/$1 [R=301,L]
+
+#Require no subdomain ^
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} \.([^\.]+\.[^\.0-9]+)$
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+#Redirecting WordPress Feeds to Feedburner ^
+#Full article:Redirecting WordPress Feeds to Feedburner
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^/feed\.gif$
+RewriteRule .* - [L]
+RewriteCond %{HTTP_USER_AGENT} !^.*(FeedBurner|FeedValidator) [NC]
+RewriteRule ^feed/?.*$ http://feeds.feedburner.com/apache/htaccess [L,R=302]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+#Only allow GET and PUT Request Methods ^
+#Article: Request Methods
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_METHOD} !^(GET|PUT)
+RewriteRule .* - [F]
+
+#Prevent Files image/file hotlinking and bandwidth stealing ^
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?askapache.com/.*$ [NC]
+RewriteRule \.(gif|jpg|swf|flv|png)$ /feed/ [R=302,L]
+
+#Stop browser prefetching ^
+
+RewriteEngine On
+SetEnvIfNoCase X-Forwarded-For .+ proxy=yes
+SetEnvIfNoCase X-moz prefetch no_access=yes
+
+# block pre-fetch requests with X-moz headers
+
+RewriteCond %{ENV:no_access} yes
+RewriteRule .* - [F,L]

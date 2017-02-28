@@ -1,0 +1,1 @@
+Get-ChildItem IIS:\AppPools | %{$_ | select name, @{L="timeout"; E={$_.processmodel.idletimeout.minutes}}}

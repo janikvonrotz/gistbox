@@ -1,0 +1,1 @@
+OK, the idea here is that spambots will fill out all fields in the form. So we hide one of the fields with CSS (so users don't see it) and if it's filled out, we don't allow the submission to complete. This isn't my idea but I don't remember exactly where I found it.

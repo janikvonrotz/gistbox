@@ -1,0 +1,1 @@
+Write-Progress -Activity "Update settings" -status $($Mailbox.Name) -percentComplete ([Int32](([Array]::IndexOf($Mailboxes, $Mailbox)/($Mailboxes.count))*100))

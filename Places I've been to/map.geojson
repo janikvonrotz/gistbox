@@ -1,0 +1,885 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "place": "Berlin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.38958740234375,
+          52.517892228382834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "München"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.576156616210938,
+          48.13745402934834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Kopenhagen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.571449279785156,
+          55.68706879176388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "London"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1318359375,
+          51.50703296721856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Exeter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.526611328125,
+          50.725806962720625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Liverpool"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9821014404296875,
+          53.405233950076024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "West Kirby"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1896400451660156,
+          53.372576177959054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Paris"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3517608642578125,
+          48.85613168160397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Montpellier"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8761138916015625,
+          43.611346752221245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Lisboa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.131011962890625,
+          38.71551876930462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Strassburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74982452392578,
+          48.58455670556232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Mariapfarr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.745956420898438,
+          47.15096839404951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Chiang Mai"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.98647308349608,
+          18.790617651875582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Bangkok"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.50498962402344,
+          13.752724664397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Ko Tao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.83413696289062,
+          10.093938033440626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Ko Phangan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.02124786376953,
+          9.746617945502305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Krabi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.83867263793945,
+          8.012571277634345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "George Town"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.32903671264648,
+          5.417097518793559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Sydney"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.21170043945312,
+          -33.85673152928874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Brisbane"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.03131103515625,
+          -27.4680690032157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Rainbow Beach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.09104919433594,
+          -25.905865086323807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Fraser Island"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.1555938720703,
+          -25.22295665631596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Cairns"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.77346801757812,
+          -16.91888080315433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Airlie Beach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.7182331085205,
+          -20.269041112326832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Singapore"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.84002685546875,
+          1.290784355433135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "San Francisco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41996765136719,
+          37.778855861649966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Los Angeles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24172973632812,
+          34.05152161016494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Lloret de Mar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8399658203125,
+          41.69650051162981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "South Lake Tahoe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.99061584472655,
+          38.9396506365778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Las Vegas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.1641845703125,
+          36.166705242637356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Joshua Tree National Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.94713211059569,
+          33.89585344781889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Zion National Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.00485610961914,
+          37.319117037605444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Death Valley National Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.11013793945314,
+          36.4952855312581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "New York"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9870834350586,
+          40.73086864241804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Braga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.427886962890625,
+          41.549700145132725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Protaras"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.053497314453125,
+          35.01537628090694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Hong Kong"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17266845703124,
+          22.310061087979612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Sequoia National Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.56342315673827,
+          36.500529337632216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Yosemite National Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.51339721679688,
+          37.84232584933158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Elba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.338134765625,
+          42.789354160502775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Atlantikküste"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.131256103515625,
+          56.29787215216447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Tintagel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.752788543701172,
+          50.66404333726616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Brecon Beacons National Park "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.478546142578125,
+          51.8913252533494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Mandal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.452335357666016,
+          58.02664598826322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Oslo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.743255615234375,
+          59.91097597079679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Stavanger"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7314300537109375,
+          58.967888777507724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Örkelljunga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.289337158203123,
+          56.27919846171448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Porto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.609161376953125,
+          41.14970617453726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Salzburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.041887283325195,
+          47.800126324760704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Bodie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.00733947753905,
+          38.21714351862661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Saint-Florent"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.283447265625,
+          42.67435857693384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "place": "San José"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.08660888671875,
+          9.930976812881799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "place": "Puerto Viejo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75348663330078,
+          9.657953979072877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "place": "La Fortuna"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.64588165283203,
+          10.47177608037063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "place": "San José"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.89331054687499,
+          37.33358648431286
+        ]
+      }
+    }
+  ]
+}

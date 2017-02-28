@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Content>
+
+	<Metadata>
+		<Title>Server Script Configuration File</Title>
+		<Filename>vblw2k8sp01.script.config.xml</Filename>
+		<Description></Description>
+		<Tags>powershell, server, script, configuration</Tags>
+		<Project></Project>
+		<Author>Janik von Rotz</Author>
+		<AuthorContact>http://janikvonrotz.ch</AuthorContact>
+		<CreateDate>2013-08-14</CreateDate>
+		<LastEditDate>2013-08-14</LastEditDate>
+		<Version>1.0.0</Version>
+	</Metadata>
+	
+	<Script Name="GlobalConfig">
+	
+		<SharePoint>
+		
+			<Mail From="noreply@sharepoint.domain.ch" SmtpServer="mail.domain.ch"></Mail>
+		
+			<SiteCollection Url="http://sharepoint.domain.ch" Feature="ReportUncheckedFiles"></SiteCollection>
+			<SiteCollection Url="http://mysite.domain.ch" Feature=""></SiteCollection>
+			
+			<ADUserAndGroupSPAdministrators>F_Verantwortlicher SharePoint</ADUserAndGroupSPAdministrators>
+			<ADUserAndGroupSPAdministrators>vukovic</ADUserAndGroupSPAdministrators>
+			
+		</SharePoint>
+	
+	</Script>
+
+    
+</Content>

@@ -1,0 +1,1 @@
+Get-EventLog -LogName system -ComputerName vmbterm2 -InstanceId 41

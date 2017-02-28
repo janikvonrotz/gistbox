@@ -1,0 +1,22 @@
+html{
+	overflow-y: scroll;
+}
+
+body{
+	text-align: center;
+}
+
+#wrapper{
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.wp-caption, img, iframe {
+	max-width: 100% !important;
+}
+
+article .featured-image img {
+	box-shadow: none;
+}

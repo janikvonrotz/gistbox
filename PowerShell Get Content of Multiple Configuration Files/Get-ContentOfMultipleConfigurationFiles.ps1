@@ -1,0 +1,2 @@
+# Get Mail Error Report Configuration
+$MailConfigs = Get-ChildItem -Path $PSconfigs.Path -Filter $PSconfigs.Mail.Filter -Recurse | %{[xml]$(get-content $_.FullName)} | %{$_.Content.Mail | where{$_.Name -eq $PSconfigs.Mail.ErrorClass}} | select -first 1

@@ -1,0 +1,2 @@
+# extensionattribute2 ist cost center number
+Get-ADUser -Filter * -Properties extensionattribute2, department | where{$_.extensionattribute2 -and $_.department} | select extensionattribute2, department -Unique | sort extensionattribute2 | out-gridview

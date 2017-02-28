@@ -1,0 +1,28 @@
+[Header]
+;#--------------------------------------------------#
+;# Title: Columbus driver install script template
+;#--------------------------------------------------#
+;# File name: DriverInstallScript.wms
+;# Description: 
+;# Tags: columbus, script, driver, install
+;# Project: 
+;#
+;# Author: Janik von Rotz
+;# Author Contact: www.janikvonrotz.ch
+;#
+;# Create Date: yyyyy-mm-dd hh:mm
+;# Last Edit Date: yyyyy-mm-dd hh:mm
+;# Version: 0.0.0
+;#--------------------------------------------------#
+[SETUP]
+;#--------------------------------------------------#
+;#  Main
+;#--------------------------------------------------#
+;# Video
+RUN '%_ASetupPath%Drivers\VIDEO\Setup.bat' SHOW WAITDOWN TASK:10
+;# Cleanup
+RD '%_SystemDrive%Drivers'
+RD '%_SystemDrive%Intel'
+;# System Reboot
+ System Reboot Immediate
+

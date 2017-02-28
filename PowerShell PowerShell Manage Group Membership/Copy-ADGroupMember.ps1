@@ -1,0 +1,1 @@
+Get-ADGroupmember "" | %{Add-ADGroupMember -Identity "" -Members $_}

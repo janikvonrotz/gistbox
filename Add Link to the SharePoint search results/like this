@@ -1,0 +1,19 @@
+<xsl:template name="ViewInBrowser">
+  <xsl:param name="browserlink" />
+  <xsl:param name="currentId" />
+  <xsl:if test="string-length($browserlink) &gt; 0">
+    <span class="srch-urllink"><a href="{$browserlink}" id="{concat($currentId,'_VBlink')}">
+      <xsl:value-of select="$ViewInBrowser" />
+    </a>  
+  </span>	
+  </xsl:if>
+    <a>
+      <xsl:attribute name="href">
+        <xsl:value-of select="sitename"/>
+      </xsl:attribute>
+	<xsl:text xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime" ddwrt:whitespace-preserve="yes" xml:space="preserve">
+      </xsl:text>
+	<xsl:text xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime" ddwrt:nbsp-preserve="yes" disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+	Ordner anzeigen
+    </a>
+</xsl:template>

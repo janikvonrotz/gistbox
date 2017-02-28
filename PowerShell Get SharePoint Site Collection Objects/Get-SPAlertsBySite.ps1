@@ -1,0 +1,1 @@
+(Get-SPSite "http://sharepoint.domain.ch").AllWebs | select -expand Alerts

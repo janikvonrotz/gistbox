@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Content>
+	<Metadata>
+		<Title>Server Remote Configurations</Title>
+		<Filename>Server.remote.config.xml</Filename>
+		<Description></Description>
+		<Tags>powershell, configuration, remote, session</Tags>
+		<Project></Project>
+		<Author>Janik von Rotz</Author>
+		<AuthorContact>www.janikvonrotz.ch</AuthorContact>
+		<CreateDate>2013-11-18</CreateDate>
+		<LastEditDate>2013-11-18</LastEditDate>
+		<Version>3.0.0</Version>
+	</Metadata>
+	
+	<!-- SharePoint -->
+    <Server Key="sp1" Name="vblw2k8sp01" User="vbl\sa-spadmin" Description="SharePoint Server" SnapIns="Microsoft.SharePoint.PowerShell"></Server>
+
+</Content>

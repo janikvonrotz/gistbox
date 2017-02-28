@@ -1,0 +1,1 @@
+cmdkey /list | ForEach-Object{if($_ -like "*Ziel:*"){cmdkey /del:($_ -replace " ","" -replace "Ziel:","")}}

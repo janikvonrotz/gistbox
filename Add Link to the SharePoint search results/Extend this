@@ -1,0 +1,10 @@
+<xsl:template name="ViewInBrowser">
+  <xsl:param name="browserlink" />
+  <xsl:param name="currentId" />
+  <xsl:if test="string-length($browserlink) &gt; 0">
+    <span class="srch-urllink"><a href="{$browserlink}" id="{concat($currentId,'_VBlink')}">
+      <xsl:value-of select="$ViewInBrowser" />
+    </a>  
+	</span>	
+  </xsl:if>
+</xsl:template>

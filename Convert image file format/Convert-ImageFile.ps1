@@ -1,0 +1,1 @@
+Get-ChildItem | foreach{Invoke-Expression "gm.exe convert $($_.Name) $($_.BaseName).png"}
