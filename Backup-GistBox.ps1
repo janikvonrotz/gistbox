@@ -1,36 +1,27 @@
 $url = "https://api.github.com/users/janikvonrotz/gists?page="
-$root = "/Users/janikvonrotz/LocalDrive/GistBox"
+$root = "/Users/janikvonrotz/LocalDrive/gistbox"
 $Metadata = @()
 
 (1..11) | %{
 
   $gistUrl = ($url + $_)
-  #Write-Host "Fetch gists from: $gistUrl"
-
   $gists = Invoke-Restmethod -Uri $gistUrl
-  $gists | %{
 
-    #$_.git_pull_url
-    #($_.description).split("#")[0] -replace "`n","" -replace "`r","" -replace "`r`n","" -replace ":",""
+  $gists | %{
 
     $pullUrl = $_.git_pull_url
     $name = ($_.description).split("#")[0] -replace "`n","" -replace "`r","" -replace "`r`n","" -replace ":",""
     $tags = ($_.description).split("#")[1..100] | %{"#$_" -replace "`n","" -replace "`r","" -replace "`r`n",""}
     $localPath = Join-Path $root $name
+    $gitFolder = Join-Path $localPath '.git'
 
-    if(Test-Path $localPath){
-
-     cd ($localPath)
-     Write-Host "Update gist: $($name)"
-     git pull
-     cd $root
-
-    }else{
-
-     cd $root
-     Write-Host "Cloning gist: $($name)"
-     git clone $pullUrl "$localPath" --quiet
-
+    cd $root
+    Write-Host "Cloning gist: $($name)"
+    git clone $pullUrl "$localPath" --quiet
+    
+    if(($localPath -ne "") -and (Test-Path $gitFolder)) {
+      Write-Host "Remove folder $($gitFolder)"
+      Remove-Item $gitFolder  -Recurse -Force -Confirm:$false
     }
 
     $Metadata += @{name=$name;tags=$tags}
