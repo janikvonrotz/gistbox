@@ -1,5 +1,12 @@
 ﻿[
     {
+        "tags":  [
+                     "#Markdown",
+                     "#Meteor"
+                 ],
+        "name":  "Meteor project structure"
+    },
+    {
         "tags":  "#ImageMagick",
         "name":  "Convert-ImageToSVG"
     },
