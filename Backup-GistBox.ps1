@@ -13,16 +13,16 @@ $metadata = @()
     $name = ($_.description).split("#")[0] -replace "`n","" -replace "`r","" -replace "`r`n","" -replace ":",""
     $tags = ($_.description).split("#")[1..100] | %{"#$_" -replace "`n","" -replace "`r","" -replace "`r`n",""}
     $localPath = Join-Path $root $name
-    $gitFolder = Join-Path $localPath '.git'
+    #$gitFolder = Join-Path $localPath '.git'
 
     cd $root
     Write-Host "Cloning gist: $($name)"
     git clone $pullUrl "$localPath" --quiet
 
-    if(($localPath -ne "") -and (Test-Path $gitFolder)) {
-      Write-Host "Remove folder $($gitFolder)"
-      Remove-Item $gitFolder  -Recurse -Force -Confirm:$false
-    }
+    # if(($localPath -ne "") -and (Test-Path $gitFolder)) {
+    #   Write-Host "Remove folder $($gitFolder)"
+    #   Remove-Item $gitFolder  -Recurse -Force -Confirm:$false
+    # }
 
     $metadata += @{name=$name;tags=$tags}
   }

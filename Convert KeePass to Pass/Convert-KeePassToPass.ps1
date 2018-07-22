@@ -1,5 +1,11 @@
 [xml]$Content = Get-Content -Path "KeepassData.xml"
 
+<#
+Access the xml data:
+
+Content.KeePassFile.Root.Group.Group.Entry[67].String[0].Value
+#>
+
 function Traverse-Tree ($Node, $ParentPath) {
 
     $Path = $ParentPath + "/" + $Node.Name
@@ -15,8 +21,9 @@ function Traverse-Tree ($Node, $ParentPath) {
                 switch($Field.Key) {
                     "Title" { $Title = $Field.Value }
                     "Password" { $Password = $Field.Value.'#text' }
+                    "Notes" { $Content += "$($Field.Key): $(($Field.Value -replace "\n","\n" ) -replace ":", "=")`n" }
                     default {
-                        $Content += "$($Field.Key): `"$($Field.Value)`"`n"
+                        $Content += "$($Field.Key): $($Field.Value)`n"
                     }
                 }
             }

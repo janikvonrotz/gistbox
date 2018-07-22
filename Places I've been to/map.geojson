@@ -7,7 +7,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "place": "Berlin"
+        "title": "Berlin",
+        "date": "2016-04-01"
       },
       "geometry": {
         "type": "Point",
@@ -119,7 +120,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Paris"
+        "title": "Paris",
+        "date": "2008-07-01"
       },
       "geometry": {
         "type": "Point",
@@ -135,7 +137,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Montpellier"
+        "title": "Montpellier",
+        "date": "2010-06-01"
       },
       "geometry": {
         "type": "Point",
@@ -151,7 +154,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Lisboa"
+        "title": "Lisboa",
+        "date": "2015-06-01"
       },
       "geometry": {
         "type": "Point",
@@ -199,7 +203,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Chiang Mai"
+        "title": "Chiang Mai",
+        "date": "2014-07-01"
       },
       "geometry": {
         "type": "Point",
@@ -215,7 +220,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Bangkok"
+        "title": "Bangkok",
+        "date": "2014-07-01"
       },
       "geometry": {
         "type": "Point",
@@ -231,7 +237,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Ko Tao"
+        "title": "Ko Tao",
+        "date": "2014-07-01"
       },
       "geometry": {
         "type": "Point",
@@ -247,7 +254,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Ko Phangan"
+        "title": "Ko Phangan",
+        "date": "2014-07-01"
       },
       "geometry": {
         "type": "Point",
@@ -263,7 +271,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Krabi"
+        "title": "Krabi",
+        "date": "2014-07-01"
       },
       "geometry": {
         "type": "Point",
@@ -279,7 +288,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "George Town"
+        "title": "George Town",
+        "date": "2014-07-01"
       },
       "geometry": {
         "type": "Point",
@@ -295,7 +305,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Sydney"
+        "title": "Sydney",
+        "date": "2014-07-30"
       },
       "geometry": {
         "type": "Point",
@@ -311,7 +322,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Brisbane"
+        "title": "Brisbane",
+        "date": "2014-07-30"
       },
       "geometry": {
         "type": "Point",
@@ -327,7 +339,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Rainbow Beach"
+        "title": "Rainbow Beach",
+        "date": "2014-07-30"
       },
       "geometry": {
         "type": "Point",
@@ -343,7 +356,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Fraser Island"
+        "title": "Fraser Island",
+        "date": "2014-07-30"
       },
       "geometry": {
         "type": "Point",
@@ -359,7 +373,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Cairns"
+        "title": "Cairns",
+        "date": "2014-07-30"
       },
       "geometry": {
         "type": "Point",
@@ -375,7 +390,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Airlie Beach"
+        "title": "Airlie Beach",
+        "date": "2014-07-30"
       },
       "geometry": {
         "type": "Point",
@@ -391,7 +407,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Singapore"
+        "title": "Singapore",
+        "date": "2014-07-01"
       },
       "geometry": {
         "type": "Point",
@@ -407,7 +424,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "San Francisco"
+        "title": "San Francisco",
+        "date": "2014-08-15"
       },
       "geometry": {
         "type": "Point",
@@ -423,7 +441,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Los Angeles"
+        "title": "Los Angeles",
+        "date": "2014-08-15"
       },
       "geometry": {
         "type": "Point",
@@ -439,7 +458,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Lloret de Mar"
+        "title": "Lloret de Mar",
+        "date": "2011-07-01"
       },
       "geometry": {
         "type": "Point",
@@ -455,7 +475,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "South Lake Tahoe"
+        "title": "South Lake Tahoe",
+        "date": "2014-08-15"
       },
       "geometry": {
         "type": "Point",
@@ -471,7 +492,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Las Vegas"
+        "title": "Las Vegas",
+        "date": "2014-08-15"
       },
       "geometry": {
         "type": "Point",
@@ -487,7 +509,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Joshua Tree National Park"
+        "title": "Joshua Tree National Park",
+        "date": "2014-08-15"
       },
       "geometry": {
         "type": "Point",
@@ -503,7 +526,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Zion National Park"
+        "title": "Zion National Park",
+        "date": "2014-08-15"
       },
       "geometry": {
         "type": "Point",
@@ -519,7 +543,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Death Valley National Park"
+        "title": "Death Valley National Park",
+        "date": "2014-08-15"
       },
       "geometry": {
         "type": "Point",
@@ -535,7 +560,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "New York"
+        "title": "New York",
+        "date": "2014-08-30"
       },
       "geometry": {
         "type": "Point",
@@ -567,7 +593,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Protaras"
+        "title": "Protaras",
+        "date": "2013-07-01"
       },
       "geometry": {
         "type": "Point",
@@ -583,7 +610,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Hong Kong"
+        "title": "Hong Kong",
+        "date": "2017-12-12"
       },
       "geometry": {
         "type": "Point",
@@ -599,7 +627,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Sequoia National Park"
+        "title": "Sequoia National Park",
+        "date": "2014-08-15"
       },
       "geometry": {
         "type": "Point",
@@ -615,7 +644,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Yosemite National Park"
+        "title": "Yosemite National Park",
+        "date": "2014-08-15"
       },
       "geometry": {
         "type": "Point",
@@ -791,7 +821,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Bodie"
+        "title": "Bodie",
+        "date": "2014-08-15"
       },
       "geometry": {
         "type": "Point",
@@ -807,7 +838,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "title": "Saint-Florent"
+        "title": "Saint-Florent",
+        "date": "2015-07-30"
       },
       "geometry": {
         "type": "Point",
@@ -823,7 +855,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "place": "San José"
+        "place": "San José",
+        "date": "2016-10-15"
       },
       "geometry": {
         "type": "Point",
@@ -839,7 +872,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "place": "Puerto Viejo"
+        "place": "Puerto Viejo",
+        "date": "2016-10-15"
       },
       "geometry": {
         "type": "Point",
@@ -855,7 +889,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "place": "La Fortuna"
+        "place": "La Fortuna",
+        "date": "2016-10-15"
       },
       "geometry": {
         "type": "Point",
@@ -871,13 +906,150 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "place": "San José"
+        "place": "San José",
+        "date": "2016-10-15"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -121.89331054687499,
           37.33358648431286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Amrum",
+        "date": "2018-01-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.351669311523438,
+          54.65198793476655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Peking",
+        "date": "2017-12-12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.36169433593751,
+          39.91394967016644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Tianjin ",
+        "date": "2017-12-12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.20214843749999,
+          39.12579898118161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Shanghai",
+        "date": "2017-12-12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4923095703125,
+          31.22689446881399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Guilin",
+        "date": "2017-12-12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.291748046875,
+          25.283196012824373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Kunming",
+        "date": "2017-12-12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.71942138671875,
+          25.04330389487308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Shenzhen",
+        "date": "2017-12-12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.05044555664062,
+          22.53792742994721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Offenburg",
+        "date": "2018-07-07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.964057922363281,
+          48.450610193358266
         ]
       }
     }
