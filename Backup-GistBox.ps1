@@ -1,31 +1,41 @@
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+# declar variables
 $url = "https://api.github.com/users/janikvonrotz/gists?page="
 $root = $PSScriptRoot
 $metadata = @()
 
+
 (1..11) | ForEach-Object {
 
-  $gistUrl = ($url + $_)
-  $gists = Invoke-Restmethod -Uri $gistUrl
+	$gistUrl = ($url + $_)
+	$gists = Invoke-Restmethod -Uri $gistUrl
 
-  $gists | ForEach-Object {
+	$gists | ForEach-Object {
 
-    $pullUrl = $_.git_pull_url
-    $name = ($_.description).split("#")[0] -replace "`n","" -replace "`r","" -replace "`r`n","" -replace ":",""
-    $tags = ($_.description).split("#")[1..100] | %{"#$_" -replace "`n","" -replace "`r","" -replace "`r`n",""}
-    $localPath = Join-Path $root $name
-    #$gitFolder = Join-Path $localPath '.git'
+		# get metadata
+		$name = ($_.description).split("#")[0] -replace "`n","" -replace "`r","" -replace "`r`n","" -replace ":",""
+		$tags = ($_.description).split("#")[1..100] | %{"#$_" -replace "`n","" -replace "`r","" -replace "`r`n",""}
+		$metadata += @{name=$name;tags=$tags}
 
-    cd $root
-    Write-Host "Cloning gist: $($name)"
-    git clone $pullUrl "$localPath" --quiet
+		# create git directory if it does not exist
+		$localPath = Join-Path $root $name
+		if(!(Test-Path -Path $localPath)){
+			New-Item -ItemType directory -Path $localPath
+		}
 
-    # if(($localPath -ne "") -and (Test-Path $gitFolder)) {
-    #   Write-Host "Remove folder $($gitFolder)"
-    #   Remove-Item $gitFolder  -Recurse -Force -Confirm:$false
-    # }
-
-    $metadata += @{name=$name;tags=$tags}
-  }
+		# get pull url, clone repo or if it exists pull master
+		$pullUrl = $_.git_pull_url
+		if(Test-Path -Path $(Join-Path $localPath ".git")){
+			cd $(Join-Path $localPath ".git")
+			Write-Host "Pull gist: $($name)"
+			git pull
+		} else {
+			cd $root
+			Write-Host "Cloning gist: $($name)"
+			git clone $pullUrl "$localPath" --quiet
+		}
+	}
 }
 
 $metadata | ConvertTo-Json | Out-File metadata.json -Encoding utf8
