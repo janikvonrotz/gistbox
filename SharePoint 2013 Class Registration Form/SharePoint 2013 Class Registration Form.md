@@ -20,7 +20,7 @@ Fields:
 * FilledSeats
   * Type: Number
 
-* ReaminingSeats
+* RemainingSeats
   * Type: Calculated
   * Formula: `=Seats-FilledSeats`
   * Data type returned: Number
@@ -40,7 +40,7 @@ Fields:
   
 * Register
   * Type: Calculated
-  * Formula: `=IF(Closed=TRUE;"Closed for registration";IF(ReaminingSeats>0;CONCATENATE("<a href='#' onclick='OpenRegistrationForm(";StaticID;")'>Register</a>");"Class is Full"))`
+  * Formula: `=IF(Closed=TRUE;"Closed for registration";IF(RemainingSeats>0;CONCATENATE("<a href='#' onclick='OpenRegistrationForm(";StaticID;")'>Register</a>");"Class is Full"))`
   * Data type returned: Number
   * Note: You might have to replace the semicolons with commas as this seperater depends on the SharePoint localized installation.
   
