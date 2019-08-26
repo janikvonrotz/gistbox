@@ -855,8 +855,9 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "place": "San José",
-        "date": "2016-10-15"
+        "place": "",
+        "date": "2016-10-15",
+        "title": "San José"
       },
       "geometry": {
         "type": "Point",
@@ -872,8 +873,9 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "place": "Puerto Viejo",
-        "date": "2016-10-15"
+        "place": "",
+        "date": "2016-10-15",
+        "title": "Puerto Viejo"
       },
       "geometry": {
         "type": "Point",
@@ -889,8 +891,9 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "place": "La Fortuna",
-        "date": "2016-10-15"
+        "place": "",
+        "date": "2016-10-15",
+        "title": "La Fortuna"
       },
       "geometry": {
         "type": "Point",
@@ -906,8 +909,9 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "place": "San José",
-        "date": "2016-10-15"
+        "place": "",
+        "date": "2016-10-15",
+        "title": "San José"
       },
       "geometry": {
         "type": "Point",
@@ -1050,6 +1054,391 @@
         "coordinates": [
           7.964057922363281,
           48.450610193358266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "New Delhi",
+        "date": "2018-11-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.21946716308594,
+          28.635157471966515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "McLeodGanj",
+        "date": "2018-11-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.32433891296385,
+          32.2393031839833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Amritsar",
+        "date": "2018-11-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.87319946289062,
+          31.632921683148886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Varanasi",
+        "date": "2018-11-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.00514221191406,
+          25.301820690255198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Rishikesh",
+        "date": "2018-11-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.32985877990723,
+          30.123748754600435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Cotignac",
+        "date": "2019-04-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.149768829345703,
+          43.52826446811469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Gorge du Verdon",
+        "date": "2019-04-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2532806396484375,
+          43.80157978110818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Athens",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.725318908691403,
+          37.98155119106918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Peloponnese",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.825469970703125,
+          37.95610943630718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.20361328125,
+          38.852542390364235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Ioannina",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.833168029785156,
+          39.68420396725724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Epirus",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.47988891601562,
+          39.88866516883713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Meteora",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.20086669921875,
+          39.76738084178371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Ktismata",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3521728515625,
+          39.91289633555756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "blue eye",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.03631591796875,
+          39.915002988576155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Himare",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.75067138671875,
+          40.096983167279575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Vlore",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.482879638671875,
+          40.47620304302563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Durres",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.444427490234375,
+          41.321138395239565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Shkoder",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.507598876953125,
+          42.06968462804663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Bar",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.180755615234375,
+          42.19291648699529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Cetinje",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.928070068359375,
+          42.385937107381125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Kotor",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.774261474609375,
+          42.428524987525385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "title": "Dubrovnik",
+        "date": "2019-05-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.106842041015625,
+          42.65416193033991
         ]
       }
     }

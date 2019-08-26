@@ -27,7 +27,7 @@ $metadata = @()
 		# get pull url, clone repo or if it exists pull master
 		$pullUrl = $_.git_pull_url
 		if(Test-Path -Path $(Join-Path $localPath ".git")){
-			cd $(Join-Path $localPath ".git")
+			cd $localPath
 			Write-Host "Pull gist: $($name)"
 			git pull
 		} else {
