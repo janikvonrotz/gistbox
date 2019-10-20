@@ -21,9 +21,12 @@ function Traverse-Tree ($Node, $ParentPath) {
                 switch($Field.Key) {
                     "Title" { $Title = $Field.Value }
                     "Password" { $Password = $Field.Value.'#text' }
-                    "Notes" { $Content += "$($Field.Key): $(($Field.Value -replace "\n","\n" ) -replace ":", "=")`n" }
+                    "Notes" { 
+                        $Content += "$($Field.Key): $(($Field.Value -replace "\n","\n" ) -replace ":", "=")`n"
+                        Write-Host $Content
+                    }
                     default {
-                        $Content += "$($Field.Key): $($Field.Value)`n"
+                        $Content += "$($Field.Key): $($Field.Value -replace "\n","\n" )`n"
                     }
                 }
             }
@@ -45,5 +48,6 @@ $Content.KeePassFile.Root.Group.Group | ForEach-Object {
     Traverse-Tree -Node $_ -ParentPath ""
 } | ForEach-Object {
     Write-Host "Creating pass entry: $($_.Path)"
+    Write-Host $_.Content
     $_.Content | & pass insert -m $_.Path
 }
