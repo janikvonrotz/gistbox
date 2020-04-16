@@ -1,5 +1,35 @@
 ﻿[
     {
+        "tags":  {
+
+                 },
+        "name":  "Pull all git projects"
+    },
+    {
+        "tags":  {
+
+                 },
+        "name":  "Backup to external drive"
+    },
+    {
+        "tags":  {
+
+                 },
+        "name":  "Garmin Connect Weight"
+    },
+    {
+        "tags":  {
+
+                 },
+        "name":  "Manually renew letsencrypt certificate"
+    },
+    {
+        "tags":  {
+
+                 },
+        "name":  "Split file names into year and month folder"
+    },
+    {
         "tags":  "#powershell",
         "name":  "Extract and transfrom metadata of all image files in a folder"
     },

@@ -6,7 +6,7 @@ $root = $PSScriptRoot
 $metadata = @()
 
 
-(1..11) | ForEach-Object {
+(1..12) | ForEach-Object {
 
 	$gistUrl = ($url + $_)
 	$gists = Invoke-Restmethod -Uri $gistUrl
