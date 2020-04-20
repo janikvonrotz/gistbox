@@ -17,6 +17,7 @@ vmstat
 # processes
 
 top
+htop
 
 # folder size
 
